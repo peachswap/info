@@ -6,6 +6,7 @@ import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom'
 import GlobalPage from './pages/GlobalPage'
 import TokenPage from './pages/TokenPage'
 import PairPage from './pages/PairPage'
+import PairChartPage from './pages/PairChartPage'
 import { useGlobalData, useGlobalChartData } from './contexts/GlobalData'
 import { isAddress } from './utils'
 import AccountPage from './pages/AccountPage'
@@ -125,6 +126,25 @@ function App() {
                     return (
                       <LayoutWrapper savedOpen={savedOpen} setSavedOpen={setSavedOpen}>
                         <PairPage pairAddress={match.params.pairAddress.toLowerCase()} />
+                      </LayoutWrapper>
+                    )
+                  } else {
+                    return <Redirect to="/home" />
+                  }
+                }}
+              />
+              <Route
+                exacts
+                strict
+                path="/pairchart/:pairAddress"
+                render={({ match }) => {
+                  if (PAIR_BLACKLIST.includes(match.params.pairAddress.toLowerCase())) {
+                    return <Redirect to="/home" />
+                  }
+                  if (isAddress(match.params.pairAddress.toLowerCase())) {
+                    return (
+                      <LayoutWrapper savedOpen={savedOpen} setSavedOpen={setSavedOpen}>
+                        <PairChartPage pairAddress={match.params.pairAddress.toLowerCase()} />
                       </LayoutWrapper>
                     )
                   } else {
