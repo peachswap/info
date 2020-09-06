@@ -170,6 +170,14 @@ function PairList({ pairs, color, disbaleLinks, maxItems = 10 }) {
                 link={true}
               />
             </CustomLink>
+            <CustomLink style={{ marginLeft: '20px', whiteSpace: 'nowrap' }} to={'/pairchart/' + pairAddress} color={color}>
+              <FormattedName
+                text={pairData.token0.symbol + '-' + pairData.token1.symbol}
+                maxCharacters={below600 ? 8 : 16}
+                adjustSize={true}
+                link={true}
+              />
+            </CustomLink>
           </DataText>
           <DataText area="liq">{liquidity}</DataText>
           <DataText area="vol">{volume}</DataText>
