@@ -172,7 +172,7 @@ function PairList({ pairs, color, disbaleLinks, maxItems = 10 }) {
             </CustomLink>
             <CustomLink style={{ marginLeft: '20px', whiteSpace: 'nowrap' }} to={'/pairchart/' + pairAddress} color={color}>
               <FormattedName
-                text={pairData.token0.symbol + '-' + pairData.token1.symbol}
+                text={'Chart'}
                 maxCharacters={below600 ? 8 : 16}
                 adjustSize={true}
                 link={true}
