@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/info/static/js/main.9106e0c2.chunk.js",
-    "main.js.map": "/info/static/js/main.9106e0c2.chunk.js.map",
+    "main.js": "/info/static/js/main.2e8df0c7.chunk.js",
+    "main.js.map": "/info/static/js/main.2e8df0c7.chunk.js.map",
     "runtime-main.js": "/info/static/js/runtime-main.be74af84.js",
     "runtime-main.js.map": "/info/static/js/runtime-main.be74af84.js.map",
     "static/js/2.7f6ec61c.chunk.js": "/info/static/js/2.7f6ec61c.chunk.js",
     "static/js/2.7f6ec61c.chunk.js.map": "/info/static/js/2.7f6ec61c.chunk.js.map",
     "index.html": "/info/index.html",
-    "precache-manifest.6f477b9fc85ad162bbd9de61cbecd91f.js": "/info/precache-manifest.6f477b9fc85ad162bbd9de61cbecd91f.js",
+    "precache-manifest.fbf33d430bafd0db3632b74310a1b8e2.js": "/info/precache-manifest.fbf33d430bafd0db3632b74310a1b8e2.js",
     "service-worker.js": "/info/service-worker.js",
     "static/js/2.7f6ec61c.chunk.js.LICENSE.txt": "/info/static/js/2.7f6ec61c.chunk.js.LICENSE.txt",
     "static/media/eth.png": "/info/static/media/eth.73dabb37.png",
@@ -18,6 +18,6 @@
   "entrypoints": [
     "static/js/runtime-main.be74af84.js",
     "static/js/2.7f6ec61c.chunk.js",
-    "static/js/main.9106e0c2.chunk.js"
+    "static/js/main.2e8df0c7.chunk.js"
   ]
 }
